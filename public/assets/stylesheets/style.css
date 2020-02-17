@@ -1,0 +1,451 @@
+select {
+  font-weight: bold;
+}
+
+#header {
+  font-family: "Roboto", sans-serif !important;
+}
+
+#header #header-brand {
+  font-size: 1.5rem !important;
+  line-height: 2rem;
+  letter-spacing: normal;
+}
+
+#header #collapsibleNavId .navbar-nav .nav-link {
+  font-weight: 700!important;
+  line-height: 2rem;
+  letter-spacing: unset;
+}
+
+#footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* padding: 1rem; */
+  height: 61px;
+  background-color: #6aaaff;
+  line-height: 24px;
+}
+
+#footer #footer-line {
+  height:13px;
+  background-color: #488fef;
+}
+
+#footer #footer-main {
+  color: white;
+  font-weight: 400;
+  line-height: 3rem;
+  text-align: center;
+  letter-spacing: normal;
+}
+
+.container-scroller {
+  background-color:  rgba(25, 118, 210, 0.95) !important;
+  height: 100vh;
+  width: 100vw;
+}
+
+.main-pannel {
+  padding-top: 1%;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+.auth-form-input {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid rgb(222, 203, 203);
+}
+
+.auth-bottom-title {
+  color: rgb(222, 203, 203);
+  line-height: 24px;
+}
+
+.auth-bottom-title a {
+  color: white;
+  line-height: 24px;
+}
+
+.card-report {
+  background-color: #1976d2;
+  font-weight: bolder;
+  line-height: 24px;
+  letter-spacing: normal;
+  opacity: .3;
+  cursor: pointer;
+}
+
+.card-report:hover {
+  cursor: pointer;
+  opacity: 1 !important;
+}
+
+.report-menu {
+  height: 30vh;
+}
+
+.report-menu .report-menu-category1 {
+  width: 18vw;
+  height: 25vh;
+  position: fixed;
+  left: 30px;
+  top: 120px;
+}
+
+.report-menu .report-menu-category1 input {
+  width: 150px;
+  padding: 0.4rem;
+  border-radius: 2px;
+  background-color: white;
+  color: red;
+  font-weight: 600;
+}
+
+.report-menu .report-menu-category1 .custom-select {
+  width: 150px;
+}
+
+.report-menu .report-menu-category1 .report-show-database-name {
+  padding: 0.4rem 0.6rem 0.4rem 0.6rem;
+  width: 150px;
+  border-radius: 4px;
+  border: 1px solid rgb(222, 203, 203);
+}
+
+.report-menu .report-menu-category2 {
+  width: 18vw;
+  height: 25vh;
+  position: fixed;
+  right: 0;
+  top: 120px;
+}
+
+.report-menu .report-menu-category2 input {
+  width: 150px;
+  padding: 0.4rem;
+  border-radius: 2px;
+  background-color: white;
+  color: red;
+  font-weight: 600;
+}
+
+.report-menu .report-menu-category2 .report-input-date {
+  padding: 0.4rem 0.6rem 0.4rem 0.6rem;
+  width: 150px;
+  border-radius: 4px;
+  border: 1px solid rgb(222, 203, 203);
+}
+
+.report-menu .report-menu-category2 .custom-select {
+  width: 150px;
+}
+
+.report-body {
+  position: fixed;
+  top: 100px;
+  left: 20vw;
+  width: 60vw;
+  height: 90vh;
+  background-color: white;
+  box-shadow: 5px 10px 18px #6d6969;
+}
+
+.report-body .report-body-title-center {
+  position: absolute;
+  font-size: 15px;
+  top: 25px;
+  right: 210px;
+  font-weight: 700;
+  color: #03a9f4;
+}
+
+.report-body .report-body-title-center input {
+  padding: 0.4em;
+  border-radius: 7px;
+  width: 150px;
+}
+
+.report-body .report-body-title-center input:focus{
+  outline: none;
+}
+
+.report-body .report-body-title-right {
+  position: absolute;
+  font-size: 13px;
+  top: 25px;
+  right: 40px;
+}
+
+#display-report tr {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#display-report td {
+  padding: .2em;
+}
+
+.report-body table {
+  width: 100%;
+}
+
+.report-body table tr:after {
+  content: ' ';
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+
+.report-body table thead {
+  width: calc(100% - 22px);
+}
+
+.report-body table thead, .report-body tbody, .report-body tr, .report-body td, .report-body th {
+  display: block;
+}
+
+.report-body table thead th {
+  height: 30px;
+  text-align: left;
+}
+
+.report-body table tr th {
+  width: calc(100% / 6);
+  float: left;
+}
+
+.report-body table tr td{
+  width: calc(100% / 6);
+  float: left;
+}
+
+.report-body table tbody {
+  height: calc(75vh - 80px);
+  padding: 0px;
+  overflow-y: auto;
+}
+
+.report-body table tfoot {
+  float: left;
+  width: calc(100% - 22px);
+}
+
+.report-no-data p {
+  position: absolute;
+  left: calc(83% / 2);
+  border: 3px solid red;
+  padding: .4em 1em .4em 1em;
+  font-weight: 700;
+  color: red;
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.report-got-data p {
+  position: absolute;
+  left: calc(85% / 2);
+  border: 3px solid #1976d2;
+  padding: .4em 1em .4em 1em;
+  font-weight: 700;
+  color: #1976d2;
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.report-body table tbody .report-got-data p {
+  position: absolute;
+  left: calc(85% / 2);
+  border: 3px solid #1976d2;
+  padding: .4em 1em .4em 1em;
+  font-weight: 700;
+  color: #1976d2;
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.report-menu-bottom {
+  height: calc(70vh - 69px);
+  background-color: rgba(248,248,248, 0.9);
+  border-bottom: 15px solid #2196f3;
+}
+
+
+.table-row-edit-disabled {
+  background-color: rgba(255, 255, 255, 0);
+  border: rgba(255, 255, 255, 0) solid;
+  color: black;
+  align-content: center;
+  width: 100%;
+}
+
+.table-row-edit-enabled {
+  padding: 0.4em;
+  background-color: white;
+  border-radius: 3px;
+  color: black;
+  width: 100%;
+}
+
+/* database connection setting */
+.db-setting {
+  margin-top: 30px;
+  min-height: 40vh;
+}
+
+.db-setting .card-header {
+  height: 60px;
+  position: relative;
+  box-shadow: 0px 3px 10px rgba(42, 42, 42, 0.3);
+  background-color: white;
+}
+
+
+.db-setting .card-header .btn-add{
+  background-color: #e91e63 !important;
+  margin-top: 12px;
+  float: right;
+  position: relative;
+  box-shadow: 0px 3px 10px rgba(42, 42, 42, 0.3);
+}
+
+.db-setting .input-add-db-connection {
+  padding: 0.4rem 0.6rem 0.4rem 0.6rem;
+  width: 200px;
+  border-radius: 4px;
+  border: 1px solid rgb(222, 203, 203);
+  float:right;
+}
+
+/* Category sales report custom css */
+#sub-report {
+  width: 53vw;
+  height: 120px;
+  modal  border: 4px solid gray;
+  display: none;
+  padding: 10px;
+}
+
+#sub-report span{
+  display: block;
+}
+
+#pagination input {
+  text-align: center;
+  position: relative;
+  top: -4px;
+  border-radius: 3px;
+  font-weight: bolder;
+  color: rgb(3, 169, 244);
+  background-color: white;
+  width: 140px;
+}
+
+#pagination span {
+  position: relative;
+  top: -4px;
+}
+
+.sortStyle {
+  cursor: pointer;
+  background-image: url(../images/table-icons/bg.gif);
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+/* Modal design */
+@keyframes fadeInRight {
+  from {
+      opacity:0;
+      -webkit-transform: translatex(100px);
+      -moz-transform: translatex(100px);
+      -o-transform: translatex(100px);
+      transform: translatex(100px);
+  }
+  to {
+      opacity:1;
+      -webkit-transform: translatex(0);
+      -moz-transform: translatex(0);
+      -o-transform: translatex(0);
+      transform: translatex(0);
+  }
+}
+
+.modal-right {
+  min-width: 60%;
+  margin: 0;
+  float: right;
+  -webkit-animation-name: fadeInRight;
+  -moz-animation-name: fadeInRight;
+  -o-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  -o-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  -o-animation-duration: 0.5s;
+  animation-delay: 0.5s;  
+  z-index: auto;                     
+}
+
+.modal-right .modal-content {
+  min-height: 100vh;
+}
+
+/* Sidbar style */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0; /* Behind the navbar */
+  padding: 0;
+  width: 280px !important;
+  background-color: rgba(25, 118, 210, 0.95) !important;
+  /* background-color: rgba(25, 118, 210, 0.95) !important; */
+  -webkit-box-shadow: 5px 0 5px -2px #888;
+      box-shadow: 5px 0 5px -2px #888;
+}
+
+.sidebar-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 48px; /* Height of navbar */
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: #333;
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #999;
+}
+
+.sidebar .nav-link.active {
+  color: #007bff;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
