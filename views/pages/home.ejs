@@ -7,7 +7,22 @@
     <div class="container-fluid page-body-wrapper">
       <main class="main-pannel">
         <div class="row">
-          Hello world
+          <% if (data.success == true) {%>
+            <% for(var obj of data.urls) { %>
+              <div class="col-md-2 mb-3 <%= obj.type %>" 
+                onclick="goReport(<%= obj.id %>)">
+                <div class="card text-white card-webinar">
+                    <img class="card-img-top" src="assets/images/webinar.jpg" alt="">
+                    <div class="card-body p-1">
+                        <h6 class="text-center font-weight-bold">
+                            <%= obj.name %>
+                        </h6>
+                    </div>
+                </div>
+              </div>
+            <% } %>
+          <% } else { %>
+          <% } %>
         </div>
       <!-- partial:../../partials/_footer.html -->
       <% include ../partials/_footer %>

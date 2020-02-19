@@ -1,4 +1,4 @@
-var urlModel = require('../models').url;
+var urlModel = require('../models').Url;
 
 var urlService = {};
 // Define the service functions
@@ -8,16 +8,22 @@ urlService.getUrls = getUrls;
 function getUrls(callback) {
   urlModel.findAll()
     .then(results => {
+      var sendData = [];
+
+      for(var obj of results) {
+        sendData.push(obj.get());
+      }
+
       callback({
         success: true,
-        data: results
+        urls: sendData
       });
     })
     .catch(error => {
       console.log(`Get URLs error found: ${error}`);
       callback({
         success: false,
-        data: error
+        urls: error
       });
     });
 }

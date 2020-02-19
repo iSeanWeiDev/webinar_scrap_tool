@@ -70,7 +70,7 @@ select {
   line-height: 24px;
 }
 
-.card-report {
+.card-webinar {
   background-color: #1976d2;
   font-weight: bolder;
   line-height: 24px;
@@ -79,7 +79,7 @@ select {
   cursor: pointer;
 }
 
-.card-report:hover {
+.card-webinar:hover {
   cursor: pointer;
   opacity: 1 !important;
 }
